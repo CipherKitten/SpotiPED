@@ -1,0 +1,25 @@
+@model ProfileModel
+
+@{
+    ViewData["Title"] = $"Profile For {Model.Name}";
+}
+
+<!--TODO: Style page-->
+<div>
+    <h2>Welcome Back @Model.Name</h2>
+    
+    <img src="@Model.ProfileImagePath" alt="Profile Picture">
+    
+    <p>Username:</p>
+    <h3>@Model.Name</h3>
+    
+    <p>Gender:</p>
+    <h3>@Model.Sex</h3>
+    
+    <p>Date of Birth:</p>
+    <h3>@Model.DateOfBirth</h3>
+    
+    <!-- TODO: Redirect to an edit page -->
+    <a>Edit</a>
+    
+</div>
