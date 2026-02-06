@@ -166,3 +166,89 @@ Some folders whose purpose is not entirely clear
       | Content | When the AccessToken will expire (UTC)| 
 </details>
 
+<details>
+  <summary>Favorite</summary>
+
+  ### Attributes
+  - Id
+
+      | Characteristic | Value |
+      | --- | --- |
+      | Type | String |
+      | Content | GUID |
+      | Attrubute Type | Primary Key |
+        
+  - UserId
+
+      | Characteristic | Value |
+      | --- | --- |
+      | Type | String |
+      | Content | GUID |
+      | Attrubute Type | Foreign Key (User) & Primary|
+  
+  - SpotifyItemId
+
+      | Characteristic | Value |
+      | --- | --- |
+      | Type | String |
+      | Content | The Id for a spotify item (eg: song) |
+
+  - Type
+
+      | Characteristic | Value |
+      | --- | --- |
+      | Type | Enum |
+      | Content | Type of spotify item |
+      | Enum Options | Track; Playlist; Podcast; Album |
+
+  - CreatedAt
+
+      | Characteristic | Value |
+      | --- | --- |
+      | Type | DateTime |
+      | Content | Date and time the item was added |
+
+</details>
+
+<details>
+  <summary>AuditLog</summary>
+
+  ### Attributes
+  - Id
+
+      | Characteristic | Value |
+      | --- | --- |
+      | Type | String |
+      | Content | GUID |
+      | Attrubute Type | Primary Key |
+        
+  - UserId
+
+      | Characteristic | Value |
+      | --- | --- |
+      | Type | String |
+      | Content | GUID |
+      | Attrubute Type | Foreign Key (User) |
+  
+  - Event
+
+      | Characteristic | Value |
+      | --- | --- |
+      | Type | String |
+      | Content | What Happened |
+
+  - Detail
+
+      | Characteristic | Value |
+      | --- | --- |
+      | Type | String |
+      | Content | Details of what happened |
+
+  - CreatedAt
+
+      | Characteristic | Value |
+      | --- | --- |
+      | Type | DateTime |
+      | Content | Date and time the event happened |
+
+</details>
